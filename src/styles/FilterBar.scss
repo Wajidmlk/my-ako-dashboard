@@ -1,0 +1,59 @@
+// FilterBar.scss
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the items horizontally */
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 40px; /* Horizontal padding */
+  border-radius: 10px;
+  position: fixed;
+  top: 10px;
+  left: 50%; /* Set left to 50% */
+  transform: translateX(-50%); /* Center the bar by translating it left by half of its width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  width: fit-content; /* Allow the width to fit the content */
+
+  /* Styling for dropdowns */
+  select {
+    margin: 0 15px; /* Increased space between selects */
+    padding: 10px 15px; /* Padding for better appearance */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 150px;
+    background-color: #f9f9f9; /* Light background for dropdowns */
+    appearance: none; /* Remove default styling */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23888888" d="M7 10l5 5 5-5z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 10px; /* Size of the arrow */
+
+    &:focus {
+      outline: none; /* Remove outline on focus */
+      border-color: #ff7f50; /* Change border color on focus */
+      box-shadow: 0 0 5px rgba(255, 127, 80, 0.5); /* Add shadow on focus */
+    }
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: #ff7f50;
+    color: #fff;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #ff6347;
+    }
+
+    &:focus {
+      outline: none; /* Remove outline on focus */
+      box-shadow: 0 0 5px rgba(255, 127, 80, 0.5); /* Add shadow on focus */
+    }
+  }
+}

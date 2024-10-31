@@ -1,0 +1,32 @@
+{
+  "totalUsers": 18470,
+  "completedCourses": 28,
+  "incompleteCourses": 72,
+  "avgLogins": 974,
+  "usersByCompletion": [
+    {
+      "group": "0%",
+      "count": 8578
+    },
+    {
+      "group": "1-25%",
+      "count": 1879
+    },
+    {
+      "group": "26-50%",
+      "count": 3802
+    },
+    {
+      "group": "51-75%",
+      "count": 746
+    },
+    {
+      "group": "76-99%",
+      "count": 81
+    },
+    {
+      "group": "100%",
+      "count": 2462
+    }
+  ]
+}

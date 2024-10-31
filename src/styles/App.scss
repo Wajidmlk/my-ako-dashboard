@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  height: 100vh;
+  .dashboard-container {
+    width: 100%;
+    padding: 10px 50px;
+  }
+
+}
+.app-header {
+  width: 100%;
+  padding: 15px 50px;
+  .app-logo {
+    height: 70px; /* Adjust height as needed */
+    
+  }
+}
+
